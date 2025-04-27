@@ -2,47 +2,97 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>League Custom Matchmaking Bot</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            padding: 20px;
-            background-color: #0d1117;
-            color: #c9d1d9;
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #0d1117, #161b22);
+            color: #e6edf3;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 30px 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        header img {
+            width: 250px;
+            border-radius: 16px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+            margin-bottom: 20px;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            color: #58a6ff;
+            margin: 10px 0;
+        }
+
+        .content {
+            max-width: 800px;
             text-align: center;
         }
-        img {
-            width: 300px;
-            margin: 20px 0;
+
+        .features {
+            margin-top: 30px;
+            text-align: left;
         }
-        .container {
-            max-width: 800px;
-            margin: auto;
+
+        .features ul {
+            list-style: none;
+            padding: 0;
         }
-        h1 {
-            color: #58a6ff;
+
+        .features li {
+            background: #21262d;
+            margin-bottom: 10px;
+            padding: 15px;
+            border-radius: 10px;
+            transition: background 0.3s;
+        }
+
+        .features li:hover {
+            background: #30363d;
+        }
+
+        footer {
+            margin-top: 50px;
+            font-size: 0.9em;
+            color: #8b949e;
         }
     </style>
 </head>
+
 <body>
-<div class="container">
-    <h1>League Custom Matchmaking Bot</h1>
 
+<header>
     <img src="./banner.png" alt="Bot Banner">
+    <h1>League Custom Matchmaking Bot</h1>
+    <p>Automating custom games for our League community!</p>
+</header>
 
-    <p>A private Discord bot built for our League of Legends community to automate custom matchmaking, account verification through Riot OAuth2, and player tracking inside Discord.</p>
-
-    <h2>Key Features:</h2>
-    <ul style="text-align: left; display: inline-block;">
-        <li>🔒 Riot OAuth2 account verification linked with Discord profiles</li>
-        <li>⚔️ Automated team balancing based on ranked divisions</li>
-        <li>🏆 Custom leaderboards inside the community</li>
-        <li>🎯 Challenge Points tracking for goals and milestones</li>
-        <li>📜 Player profiles showing match stats and ranks</li>
-    </ul>
-
-    <p>Currently under active development for private use inside our gaming community!</p>
+<div class="content">
+    <h2>Features</h2>
+    <div class="features">
+        <ul>
+            <li>🔒 Riot OAuth2 account verification linked with Discord users</li>
+            <li>⚔️ Automated matchmaking based on real ranked divisions</li>
+            <li>🏆 Community leaderboards and player stats</li>
+            <li>🎯 Challenge Points tracking and progression display</li>
+            <li>📜 Player profiles showing match participation and ranks</li>
+        </ul>
+    </div>
 </div>
+
+<footer>
+    © 2025 League Custom Bot Project | Private Discord Community
+</footer>
+
 </body>
 </html>
